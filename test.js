@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Ваш код для навигационных кнопок
+    
     const navButtons = document.querySelectorAll('.nav-button');
 
     navButtons.forEach(button => {
@@ -15,6 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    window.addEventListener('scroll', function() {
+        const navElement = document.getElementById('nav_text');
+        if (window.scrollY > 0) {
+            navElement.textContent = 'О компании';
+        } else {
+            navElement.textContent = 'О нас';
+        }
+    });
+
+    document.getElementById('menuToggle').addEventListener('click', function() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('open');
+    });
+
+    
 // 1 КОНТЕЙНЕР
 function animateSlides() {
     const slides = document.querySelectorAll('.slide');
@@ -33,8 +48,6 @@ function animateSlides() {
             }
         });
     }
-
-    // Изначальная установка размеров слайдов
     updateSlides(currentIndex);
 
     // Автоматическая смена слайдов каждые 3 секунды
@@ -43,7 +56,6 @@ function animateSlides() {
         updateSlides(currentIndex);
     }, 3000); 
 
-    // Добавляем обработчик клика на каждый слайд
     slides.forEach((slide, index) => {
         slide.addEventListener('click', () => {
             currentIndex = index;
@@ -52,13 +64,13 @@ function animateSlides() {
     });
 }
 
-// Запуск функции анимации
 animateSlides();
     // Инициализация Swiper для всех контейнеров
     const swiper = new Swiper('.swiper', {
-        slidesPerView: 3,
+        slidesPerView: "auto",
         centeredSlides: false,
-        spaceBetween: 30,
+        autoHeight: true,
+        spaceBetween: 24,
         pagination: {
           el: '.swiper-pagination',
           type: 'fraction',
@@ -68,8 +80,24 @@ animateSlides();
           prevEl: '.swiper-button-prev',
         },
     });
-
-  
+// 3 Контейнер
+const action3Container = document.querySelector('#action3');
+const slidesInAction3 = action3Container.querySelectorAll('.swiper-slide');
+slidesInAction3.forEach(slide => {
+    slide.style.height = '300px';
+});
+// 4 Контейнер
+const action4Container = document.querySelector('#action4');
+const slidesInAction4 = action4Container.querySelectorAll('.swiper-slide');
+slidesInAction4.forEach(slide => {
+    slide.style.height = '300px';
+});
+// 6 Контейнер
+const action6Container = document.querySelector('#action6');
+const slidesInAction6 = action6Container.querySelectorAll('.swiper-slide');
+slidesInAction6.forEach(slide => {
+    slide.style.height = '537px';
+});
 
     // Ваш код для калькулятора цен (5 контейнер)
     const calculateButton = document.getElementById('calculateButton');
@@ -102,10 +130,10 @@ animateSlides();
 
         // Проверка выбранных дополнительных услуг
         const additionalServices = [];
-        if (document.querySelector('.zagl1 img').classList.contains('selected')) {
+        if (document.querySelector('.crest img').classList.contains('selected')) {
             additionalServices.push({ name: 'Горячий воск', cost: 50 });
         }
-        if (document.querySelector('.zagl2 img').classList.contains('selected')) {
+        if (document.querySelector('.crest-one img').classList.contains('selected')) {
             additionalServices.push({ name: 'Уборка в багажнике', cost: 30 });
         }
 

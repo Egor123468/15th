@@ -19,33 +19,44 @@
 			<img src="picture/duck.svg">
 			<div class="logo-text">15TH Автомойка</div>
 		</div>
-		<div class="mnav"> О нас</div>
+		<div class="nav_text" id="nav_text"> О нас</div>
 		<nav class="nav">
 			<ul>
 				<li><button class="nav-button "><a href="#action1">О нас</a></button></li>
 				<li><button class="nav-button"><a href="#action2">Новости</a></button></li>
 				<li><button class="nav-button"><a href="#action3">Услуги</a></button></li>
-				<li><button class="nav-button"><a href="#action4">Цены</a></button></li>
-				<li><button class="nav-button"><a href="#action5">Видео</a></button></li>
-				<li><button class="nav-button"><a href="#action6">Контакты</a></button></li>
+				<li><button class="nav-button"><a href="#action5">Цены</a></button></li>
+				<li><button class="nav-button"><a href="#action6">Видео</a></button></li>
+				<li><button class="nav-button"><a href="#action7">Контакты</a></button></li>
 			</ul>
 		</nav>
-		<img src="picture/cotlet.png" class="mbut"></img>
+		<img src="picture/cotlet.png" class="button_menu" id="menuToggle"></img>
+		
 	</header>
+	<div class="sidebar" id="sidebar">
+		<ul>
+			<li><a href="#action1">О нас</a></li>
+			<li><a href="#action2">Новости</a></li>
+			<li><a href="#action3">Услуги</a></li>
+			<li><a href="#action4">Цены</a></li>
+			<li><a href="#action5">Видео</a></li>
+			<li><a href="#action6">Контакты</a></li>
+		</ul>
+	</div>
 	<img src="picture/about4.png" class="car-first">
 
 	<div class="main-content" id="main">
-		<div class="container-1" id="action1">
+		<div class="container" id="action1">
 
 			<div class="text-block">
-				<div class="con11-text">
+				<div class="text-block_mobile">
 					<p>15TH Автомойка -</p>
 					<p>У нас самая смачная автомойка, приходи и убедись</p>
 				</div>
-				<div class="con1-text">15TH Автомойка - У нас самая смачная автомойка, приходи и убедись</div>
-				<div class="con1-text1">15TH Автомойка – это чистый результат и экономия средств. Уход за автомобилем,
+				<div class="text-block_desktop">15TH Автомойка - У нас самая смачная автомойка, приходи и убедись</div>
+				<div class="text-block_2">15TH Автомойка – это чистый результат и экономия средств. Уход за автомобилем,
 					сервис в от проффесионалов своего дела 🔥🔥🔥</div>
-				<div class="con1-text2">Мы рады обеспечивать автомобилистам полный комплекс технологий и средств для
+				<div class="text-block_3">Мы рады обеспечивать автомобилистам полный комплекс технологий и средств для
 					качественного самостоятельного ухода за автомобилем ❤️ ❤️ ❤️</div>
 				<button class="action-button">Записаться на мойку</button>
 			</div>
@@ -58,92 +69,98 @@
 			</div>
 		</div>
 
-		<div class="container-2" id="action2">
-			<div class="con2-text">
-				<div class="zag">Новости</div>
+		<div class="container" id="action2">
+			<div class="news-container">
+				<div class="title">Новости</div>
 			</div>
 			<div class="swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide blue" data-text="Slide 1">
+					<div class="swiper-slide" data-text="Slide 1">
 						<div class="date">23.07.24</div>
-						<div class="local">
-							<div class="name">Новая автомойка!</div>
+						<div class="item-content">
+							<div class="item-title">Новая автомойка!</div>
 							<div>С 01.07.2024 открывается новая автомойка 🥰</div>
 						</div>
 					</div>
 					<div class="swiper-slide purple" data-text="Slide 2">
 						<span class="date">24.07.24</span>
-						<div class="local">
-							<div class="name">СКИДКИ!</div>
+						<div class="item-content">
+							<div class="item-title">СКИДКИ!</div>
 							<div>Каждая мойка с 14.00 до 16.00 со скидкой 20%</div>
 						</div>
 					</div>
-					<div class="swiper-slide blue " data-text="Slide 3">
+					<div class="swiper-slide" data-text="Slide 3">
 						<span class="date">23.07.24</span>
-						<div class="local">
-							<div class="name">Новая автомойка!</div>
+						<div class="item-content">
+							<div class="item-title">Новая автомойка!</div>
 							<div>С 01.07.2024 открывается новая автомойка 🥰</div>
 						</div>
 					</div>
-					<div class="swiper-slide four" data-text="Slide 4">
+					<div class="swiper-slide green" data-text="Slide 4">
 						<span class="date">23.07.24</span>
-						<div class="local">
-							<div class="name">Мойка не работает</div>
+						<div class="item-content">
+							<div class="item-title">Мойка не работает</div>
 							<div>По техническим причинам 25.07.24 автомойка по адресу...</div>
 						</div>
 					</div>
+					
 					<div class="swiper-slide purple" data-text="Slide 5">
 						<span class="date">24.07.24</span>
-						<div class="local">
-							<div class="name">СКИДКИ!</div>
+						<div class="item-content">
+							<div class="item-title">СКИДКИ!</div>
 							<div>Каждая мойка с 14.00 до 16.00 со скидкой 20%</div>
 						</div>
 					</div>
+					
 				</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
-		<!-- Контейнер 3 -->
-		<div class="container-3" id="action3">
-			<div class="con2-text">
-				<div class="zag">Услуги</div>
+		<div class="container" id="action3">
+			<div class="news-container">
+				<div class="title">Услуги</div>
 			</div>
 			<div class="swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide first" data-text="Slide 1">
-						<div class="cost">700 / 800 / 1000 р</div>
-						<div class="local1">
-							<div class="name1">Полная мойка</div>
-							<div class="detail">Кузов, панель, пылесос, коврики</div>
+					<div class="swiper-slide " data-text="Slide 1">
+						<img src="picture/usl1.jpeg" alt="Slide 1 Background" class="slide-bg">
+						<div class="price">700 / 800 / 1000 р</div>
+						<div class="service-description">
+							<div class="service-title">Полная мойка</div>
+							<div class="service-details">Кузов, панель, пылесос, коврики</div>
 						</div>
 					</div>
-					<div class="swiper-slide second" data-text="Slide 2">
-						<span class="cost">400 / 500 / 600 р </span>
-						<div class="local1 one">
-							<div class="name1">Мойка кузова</div>
-							<div class="detail">+ коврики 50 руб.</div>
+					<div class="swiper-slide " data-text="Slide 2">
+						<img src="picture/usl2.jpeg" alt="Slide 2 Background" class="slide-bg">
+						<span class="price">400 / 500 / 600 р </span>
+						<div class="service-description one">
+							<div class="service-title">Мойка кузова</div>
+							<div class="service-details">+ коврики 50 руб.</div>
 						</div>
 					</div>
-					<div class="swiper-slide third " data-text="Slide 3">
-						<span class="cost">250 / 250 / 300 р</span>
-						<div class="local1">
-							<div class="name1">Отбивка грязи с кузова</div>
-							<div class="detail">+шампунь 50 руб.</div>
+					<div class="swiper-slide  " data-text="Slide 3">
+						<img src="picture/usl3.jpeg" alt="Slide 3 Background" class="slide-bg">
+						<span class="price">250 / 250 / 300 р</span>
+						<div class="service-description">
+							<div class="service-title">Отбивка грязи с кузова</div>
+							<div class="service-details">+шампунь 50 руб.</div>
 						</div>
 					</div>
-					<div class="swiper-slide fourth" data-text="Slide 4">
-						<span class="cost">350 / 350 / 450 р</span>
-						<div class="local1">
-							<div class="name one1">Внутренняя уборка</div>
-							<div class="detail"> Стекла, панели, пылесос, коврики</div>
+					<div class="swiper-slide " data-text="Slide 4">
+						<img src="picture/usl4.jpeg" alt="Slide 4 Background" class="slide-bg">
+						<span class="price">350 / 350 / 450 р</span>
+						<div class="service-description">
+							<div class="service-title">Внутренняя уборка</div>
+							<div class="service-details"> Стекла, панели, пылесос, коврики</div>
 						</div>
 					</div>
-					<div class="swiper-slide fives" data-text="Slide 5">
-						<span class="cost">350 / 350 / 450 р</span>
-						<div class="local1">
-							<div class="name1">Внутренняя уборка</div>
-							<div class="detail">Стекла, панели, пылесос, коврики</div>
+					<div class="swiper-slide " data-text="Slide 5">
+						<img src="picture/usl5.jpeg" alt="Slide 5 Background" class="slide-bg">
+						<span class="price">350 / 350 / 450 р</span>
+						<div class="service-description">
+							<div class="service-title">Внутренняя уборка</div>
+							<div class="service-details">Стекла, панели, пылесос, коврики</div>
 						</div>
 					</div>
 				</div>
@@ -151,45 +168,50 @@
 				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
-		<div class="container-4" id="action">
-			<div class="con2-text">
-				<div class="zag">Дополнительные услуги</div>
+		<div class="container" id="action4" >
+			<div class="news-container">
+				<div class="title">Дополнительные услуги</div>
 			</div>
 			<div class="swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide first" data-text="Slide 1">
-						<div class="cost">150 р</div>
-						<div class="local1">
-							<div class="name1">Мойка днища авто</div>
-							<div class="detail">Какое-то описание услуги</div>
+					<div class="swiper-slide" data-text="Slide 1">
+						<img src="picture/dop1.jpeg" class="slide-bg">
+						<div class="price">150 р</div>
+						<div class="service-description">
+							<div class="service-title">Мойка днища авто</div>
+							<div class="service-details">Какое-то описание услуги</div>
 						</div>
 					</div>
-					<div class="swiper-slide second" data-text="Slide 2">
-						<span class="cost">150 р</span>
-						<div class="local1 one">
-							<div class="name1">Протирка стекол изнутри</div>
-							<div class="detail">Какое-то описание услуги</div>
+					<div class="swiper-slide " data-text="Slide 2">
+						<img src="picture/dop2.jpeg" class="slide-bg">
+						<span class="price">150 р</span>
+						<div class="service-description">
+							<div class="service-title">Протирка стекол изнутри</div>
+							<div class="service-details">Какое-то описание услуги</div>
 						</div>
 					</div>
-					<div class="swiper-slide third " data-text="Slide 3">
-						<span class="cost">150 р</span>
-						<div class="local1">
-							<div class="name1">Пропылесосить в салоне</div>
-							<div class="detail">Какое-то описание услуги</div>
+					<div class="swiper-slide  " data-text="Slide 3">
+						<img src="picture/dop3.jpeg" class="slide-bg">
+						<span class="price">150 р</span>
+						<div class="service-description">
+							<div class="service-title">Пропылесосить в салоне</div>
+							<div class="service-details">Какое-то описание услуги</div>
 						</div>
 					</div>
-					<div class="swiper-slide fourth" data-text="Slide 4">
-						<span class="cost">150 р</span>
-						<div class="local1">
-							<div class="name1">Мойка колес отдельно</div>
-							<div class="detail">Какое-то описание услуги</div>
+					<div class="swiper-slide " data-text="Slide 4">
+						<img src="picture/dop4.jpeg" class="slide-bg">
+						<span class="price">150 р</span>
+						<div class="service-description">
+							<div class="service-title">Мойка колес отдельно</div>
+							<div class="service-details">Какое-то описание услуги</div>
 						</div>
 					</div>
-					<div class="swiper-slide fives" data-text="Slide 5">
-						<span class="cost">150 р</span>
-						<div class="local1">
-							<div class="name1">Мойка колес отдельно</div>
-							<div class="detail">Какое-то описание услуги</div>
+					<div class="swiper-slide " data-text="Slide 5">
+						<img src="picture/dop4.jpeg" class="slide-bg">
+						<span class="price">150 р</span>
+						<div class="service-description">
+							<div class="service-title">Мойка колес отдельно</div>
+							<div class="service-details">Какое-то описание услуги</div>
 						</div>
 					</div>
 				</div>
@@ -197,17 +219,17 @@
 				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
-		<div class="container-5" id="action4">
+		<div class="container" id="action5">
 			<div class="calculator">
 				<form id="priceCalculator">
-					<div class="calc">Калькулятор цен</div>
+					<div class="calculator-title">Калькулятор цен</div>
     				<div class="form">
     					
     		        		<div>
             				<label class="sr-only" for="carClass">
                 				<p>Класс автомобиля</p>
             				</label>
-            				<select class="car" id="carClass" name="carClass">
+            				<select class="input-field" id="carClass" name="carClass">
                 				<option value="Легковой">Легковой</option>
                                 <option value="Кроссовер">Кроссовер</option>
                 				<option value="Внедорожник">Внедорожники</option>
@@ -215,7 +237,7 @@
         				</div>
         				<div>
             				<label class="sr-only" for="service">Услуга</label>
-            				<select class="car" id="service" name="service">
+            				<select class="input-field" id="service" name="service">
                 				<option value="Полная мойка">Полная мойка</option>
                 				<option value="Чистка ковров">Чистка ковров</option>
                 				<option value="Полировка машины">Полировка машины</option>
@@ -224,14 +246,14 @@
         				<div>
             				<label class="sr-only" for="additionalServices">Дополнительные услуги:</label>
                 			
-                            <div class="zaglushki">
-                                <div class="zagl1">Горячий воск
+                            <div class="additional-services">
+                                <div class="service-option crest">Горячий воск
                                     <img src="picture/crest.png">
                                 </div>
-                                <div class="zagl2">Уборка в багажнике
+                                <div class="service-option crest-one">Уборка в багажнике
                                     <img src="picture/crest.png">
                                 </div>
-                                <div class="zagl3">Добавить
+                                <div class="service-option plus">Добавить
                                     <img src="picture/plus.png">
                                 </div>
                             </div>
@@ -239,51 +261,56 @@
         				
                             
                         </div>
-						<div class="check">
-							<button class="car" type="button" id="calculateButton" >Посчитать</button>
+						<div class="calculate-button">
+							<button class="input-field" type="button" id="calculateButton" >Посчитать</button>
 						</div>
 					<div class="result" id="result">
     				</div>
 				</form>
 			</div>
-            <div class="description">
-                <div class="itog">Итог:  <div id="totalCost"class="price-text" ></div></div>
-                <div class="line"></div>
+            <div class="summary">
+                <div class="summary-total">Итог:  <div id="totalCost"class="price-text" ></div></div>
+                <div class="summary-line"></div>
                 
-                    <div class="line-all">
-                        <div class="line-object">
-                            <div class="auto">Класс автомобиля</div>
-                         <div class="auto-one type-car"></div>
+                    <div class="summary-details">
+                        <div class="summary-item">
+                            <div class="summary-label">Класс автомобиля</div>
+                         <div class="summary-value type-car"></div>
                         </div>
-                        <div class="line-object one">
-                            <div class="auto one">Услуга</div>
-                            <div class="auto-one vid-usl"></div>
+                        <div class="summary-item one">
+                            <div class="summary-label">Услуга</div>
+                            <div class="summary-value vid-usl"></div>
                         </div>
                     </div>
-                    <div class="line-object1">
-                        <div class="auto"> Дополнительные услуги</div>
-                        <div class="dop-usl"></div>
+                    <div class="summary-item">
+                        <div class="summary-label"> Дополнительные услуги</div>
+                        <div class="summary-value dop-usl"></div>
                     </div>
             </div>
     	</div>
-		<div class="container-6">
-			<div class="con2-text">
-				<div class="zag">Видео</div>
+		<div class="container" id="action6">
+			<div class="news-container">
+				<div class="title">Видео с мойки</div>
 			</div>
 			<div class="swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide first" data-text="Slide 1">
+					<div class="swiper-slide" data-text="Slide 1">
+						<img src="picture/vid1.png" class="slide-bg">
 					</div>
-					<div class="swiper-slide second" data-text="Slide 2">
+					<div class="swiper-slide " data-text="Slide 2">
+						<img src="picture/about-3.png" class="slide-bg">
 						
 					</div>
-					<div class="swiper-slide third " data-text="Slide 3">
+					<div class="swiper-slide" data-text="Slide 3">
+						<img src="picture/about-2.png" class="slide-bg">
 						
 					</div>
-					<div class="swiper-slide fourth" data-text="Slide 4">
+					<div class="swiper-slide" data-text="Slide 4">
+						<img src="picture/vid1.png" class="slide-bg">
 						
 					</div>
-					<div class="swiper-slide fives" data-text="Slide 5">
+					<div class="swiper-slide" data-text="Slide 5">
+						<img src="picture/about-3.png" class="slide-bg">
 						
 					</div>
 				</div>
@@ -291,35 +318,35 @@
 				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
-    	<div class="container-7" id="action6">
-    		<div class="con7-text">
-    			<div class="zag">Карта присутствия</div>
+    	<div class="container" id="action7">
+    		<div class="section-header">
+    			<div class="title">Карта присутствия</div>
     		</div>
-    			<div class="map-all">
+    			<div class="map-container">
     				<div class="map">
     					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0b47db365bd8896be8c347fc91343c49dc27d17437e4081771bdcf7eb6a2bfc7&amp;source=constructor" width="1200" height="380" frameborder="0"></iframe>
     				</div>
-    				<div class="contacts">
-    					<div class="city">
-    						<div class="adres">г.Ялуторовск, ул. Тюменская, д. 78, ст. 1</div>
-    						<div class="time">08:00 - 20:00, круглосуточно</div>
-    						<div class="time">Кол-во боксов: 2</div>
+    				<div class="contact-details">
+    					<div class="location-info">
+    						<div class="address">г.Ялуторовск, ул. Тюменская, д. 78, ст. 1</div>
+    						<div class="hours">08:00 - 20:00, круглосуточно</div>
+    						<div class="box-count">Кол-во боксов: 2</div>
     					</div>
 
     					<div>
-    						<hr class="hr" style="border-style: dotted;  ">
+    						<hr class="divider" style="border-style: dotted;  ">
     					</div>
-    					<div class="svyz">
-    						<div class="column-one">
-                				<div class="verh">Телефон</div>
-                				<div class="contact">+7 925 544 44 75</div>
+    					<div class="contact-info">
+    						<div class="contact-item">
+                				<div class="label">Телефон</div>
+                				<div class="contact-value">+7 925 544 44 75</div>
             					</div>
-            				<div class="column-two">
-                				<div class="verh">Эл.почта</div>
-                				<div class="contact1">info@15th.pro</div>
+            				<div class="contact-item">
+                				<div class="label">Эл.почта</div>
+                				<div class="contact-value">info@15th.pro</div>
             				</div>
-            				<div class="column-three">
-                				<div class="verh">Соц.сети</div>
+            				<div class="contact-item">
+                				<div class="label">Соц.сети</div>
                 				<div class="social-icons">
                     				<img src="picture/vector.svg" alt="Telegram">
                     				<img src="picture/vector-2.svg" alt="Vk">
@@ -341,7 +368,7 @@
 		<div class="footer-contacts">
 			<div class="column">
 				<div class="mob">Телефон</div>
-				<div class="contact">+7 925 544 44 75</div>
+				<div class="contact-value">+7 925 544 44 75</div>
 			</div>
 			<div class="column1">
 				<div class="mail">Эл.почта</div>
